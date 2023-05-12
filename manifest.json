@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 3,
+  "name": "SeatFlip",
+  "version": "1.0",
+
+  "description": "Adds a red border to all webpages matching mozilla.org.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.checkout.ticketmaster.com/*","*://*.checkout.ticketmaster.ca/*"],
+      "js": ["borderify-async.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "host_permissions": [
+    "http://99.29.228.57:8082/"
+  ]
+}
