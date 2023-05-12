@@ -96,7 +96,7 @@ function sendData(cart){
         body: JSON.stringify(cart)
     }
     // console.log(host)
-    fetch(`http://99.29.228.57:8082`, requestOptions)
+    fetch(`http://192.168.1.200:8082`, requestOptions)
         .then(response => response.json())
         .then((data) => {
           console.log(data)
@@ -119,7 +119,7 @@ function myCallback(a) {
         headers: headers,
         body: JSON.stringify(body)
     }
-    fetch(`http://99.29.228.57:1234/va-buy`, requestOptions)
+    fetch(`http://192.168.1.200:1234/va-buy`, requestOptions)
         .then(response => response.json())
         .then((data) => {
             if(data.error){
