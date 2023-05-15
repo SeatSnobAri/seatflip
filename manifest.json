@@ -29,6 +29,6 @@
     "notifications"
   ],
   "host_permissions": [
-    "http://192.168.1.200:8082/"
+    "*://192.168.1.200/*"
   ]
 }
