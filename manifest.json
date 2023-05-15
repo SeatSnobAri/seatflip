@@ -29,6 +29,6 @@
     "notifications"
   ],
   "host_permissions": [
-    "*://192.168.1.200/*"
+    "<all_urls>"
   ]
 }
