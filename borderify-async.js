@@ -80,7 +80,7 @@ async function getData(){
             // sendData(cart)
             myPort.postMessage(cart);
         }else{
-            console.log("no")
+            console.log("no mobile")
         }
 }
 
@@ -132,7 +132,7 @@ function myCallback(a) {
         headers: headers,
         body: JSON.stringify(body)
     }
-    fetch(`http://localhost:1234/va-buy`, requestOptions)
+    fetch(`http://192.168.1.200:81/va-buy`, requestOptions)
         .then(response => response.json())
         .then((data) => {
             if(data.error){
